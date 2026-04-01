@@ -20,106 +20,29 @@ while [ $count -ge 0 ]; do
 
 done
 echo ""
-echo "Now let's sing 12 Days of Christmas"
-day=1
 
-while [ $day -le 12 ]; do
-    echo "Day $day of Christmas"
+echo "Now let's sing 5 little ducks"
 
-    if [ $day -eq 1 ]; then
-        echo "A partridge in a pear tree"
-    elif [ $day -eq 2 ]; then
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 3 ]; then
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 4 ]; then
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 5 ]; then
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 6 ]; then
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 7 ]; then
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 8 ]; then
-        echo "Eight maids a milking"
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 9 ]; then
-        echo "Nine ladies dancing"
-        echo "Eight maids a milking"
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 10 ]; then
-        echo "Ten lords a leaping"
-        echo "Nine ladies dancing"
-        echo "Eight maids a milking"
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
-    elif [ $day -eq 11 ]; then
-        echo "Eleven pipers piping"
-        echo "Ten lords a leaping"
-        echo "Nine ladies dancing"
-        echo "Eight maids a milking"
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
+ducks=5
+
+while [ $ducks -ge 0 ]; do
+    if [ $ducks -gt 1 ]; then
+        echo "$ducks little ducks went out one day"
+        echo "Over the hills and far away"
+        echo "Mother duck said quack quack quack quack"
+    elif [ $ducks -eq 1 ]; then
+        echo "$ducks little duck went out one day"
+        echo "Over the hills and far away"
+        echo "Mother duck said quack quack quack quack"
     else
-        echo "Twelve drummers drumming"
-        echo "Eleven pipers piping"
-        echo "Ten lords a leaping"
-        echo "Nine ladies dancing"
-        echo "Eight maids a milking"
-        echo "Seven swans a swimming"
-        echo "Six geese a laying"
-        echo "Five golden rings"
-        echo "Four calling birds"
-        echo "Three French hens"
-        echo "Two turtle doves"
-        echo "And a partridge in a pear tree"
+        echo "No little ducks went out one day"
+        echo "Over the hills and far away"
+        echo "Mother duck said quack quack quack quack"
+        echo "And all of the 5 little ducks came back"
     fi
 
     echo ""
-    ((day = day + 1))
+    ducks=$((ducks - 1))
 done
-# exercise: implement another counting song (such as 12 days of Christmas)
+# exercise: implement another counting song (such as 12 days of Christmas) 
 # using loops and if statements.
