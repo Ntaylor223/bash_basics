@@ -1,7 +1,7 @@
 #!/bin/bash
 # read the name of the user and print hello
 
-echo "Hello! My name is Puen Xie"
+echo "Hello! My name is Nathan Taylor"
 # read name
 # echo "Welcome, $name"
 
